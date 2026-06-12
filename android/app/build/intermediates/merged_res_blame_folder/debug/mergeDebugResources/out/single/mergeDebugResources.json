@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-debug-57:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-main-59:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-debug-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-debug-57:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-main-59:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-debug-57:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\axioo\\.gradle\\daemon\\8.9\\com.tokofarhan.pos.app-main-59:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "com.tokofarhan.pos.app-debug-57:/drawable_qris_e_farhan.jpeg.flat",
+        "source": "com.tokofarhan.pos.app-main-59:/drawable/qris_e_farhan.jpeg"
+    }
+]

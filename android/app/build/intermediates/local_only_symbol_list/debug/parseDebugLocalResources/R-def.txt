@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+color ic_launcher_background
+drawable ic_launcher_foreground
+drawable qris_e_farhan
+mipmap ic_launcher
+string app_name
+style Theme.TokoFarhanPOS
+xml file_paths
+xml network_security_config

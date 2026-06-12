@@ -1,0 +1,60 @@
+com.tokofarhan.pos.app-core-ktx-1.13.1-0 C:\Users\axioo\.gradle\caches\8.9\transforms\04b895e797592a665953eb5c528e6f51\transformed\core-ktx-1.13.1\res
+com.tokofarhan.pos.app-material-release-1 C:\Users\axioo\.gradle\caches\8.9\transforms\092fbd8e3f23c80f087ccaf7ea120366\transformed\material-release\res
+com.tokofarhan.pos.app-room-runtime-2.6.1-2 C:\Users\axioo\.gradle\caches\8.9\transforms\098d3ca8411797f28aceb50650abeaea\transformed\room-runtime-2.6.1\res
+com.tokofarhan.pos.app-lifecycle-viewmodel-release-3 C:\Users\axioo\.gradle\caches\8.9\transforms\132269a8a6d9d367d87b964a34e7694e\transformed\lifecycle-viewmodel-release\res
+com.tokofarhan.pos.app-emoji2-1.3.0-4 C:\Users\axioo\.gradle\caches\8.9\transforms\1a5513a1460dbed1f2b07882a67106fb\transformed\emoji2-1.3.0\res
+com.tokofarhan.pos.app-ui-unit-release-5 C:\Users\axioo\.gradle\caches\8.9\transforms\1d2894eaca6ed10812953cd66643494e\transformed\ui-unit-release\res
+com.tokofarhan.pos.app-savedstate-1.2.1-6 C:\Users\axioo\.gradle\caches\8.9\transforms\2c64b7cf26ea7b8377806db81afd3faf\transformed\savedstate-1.2.1\res
+com.tokofarhan.pos.app-ui-tooling-data-release-7 C:\Users\axioo\.gradle\caches\8.9\transforms\2d4b4d25c069f0fdf79cebdf8b4f5b10\transformed\ui-tooling-data-release\res
+com.tokofarhan.pos.app-material-icons-core-release-8 C:\Users\axioo\.gradle\caches\8.9\transforms\30a5d55cea07fdbd32c0cab941db7687\transformed\material-icons-core-release\res
+com.tokofarhan.pos.app-navigation-runtime-2.7.7-9 C:\Users\axioo\.gradle\caches\8.9\transforms\38256576ccb9b08d2beb9926404aadd1\transformed\navigation-runtime-2.7.7\res
+com.tokofarhan.pos.app-lifecycle-runtime-release-10 C:\Users\axioo\.gradle\caches\8.9\transforms\3d12ec77603a05db3075f7848cb07426\transformed\lifecycle-runtime-release\res
+com.tokofarhan.pos.app-animation-core-release-11 C:\Users\axioo\.gradle\caches\8.9\transforms\427e474b7c73cfc663f4f78e4ad023bd\transformed\animation-core-release\res
+com.tokofarhan.pos.app-profileinstaller-1.3.1-12 C:\Users\axioo\.gradle\caches\8.9\transforms\47abc83e02bf6d0ce0c3540757d4d82d\transformed\profileinstaller-1.3.1\res
+com.tokofarhan.pos.app-navigation-common-ktx-2.7.7-13 C:\Users\axioo\.gradle\caches\8.9\transforms\4dd94caf0c131e97944206452cf3b867\transformed\navigation-common-ktx-2.7.7\res
+com.tokofarhan.pos.app-customview-poolingcontainer-1.0.0-14 C:\Users\axioo\.gradle\caches\8.9\transforms\4fb7c969b8dfb30b884820de8f7c48ca\transformed\customview-poolingcontainer-1.0.0\res
+com.tokofarhan.pos.app-ui-tooling-release-15 C:\Users\axioo\.gradle\caches\8.9\transforms\55a6e2899ecf355581d1224857098ca5\transformed\ui-tooling-release\res
+com.tokofarhan.pos.app-lifecycle-livedata-core-2.8.3-16 C:\Users\axioo\.gradle\caches\8.9\transforms\589fb70f1f03b3efbc464517047b3e43\transformed\lifecycle-livedata-core-2.8.3\res
+com.tokofarhan.pos.app-activity-ktx-1.9.0-17 C:\Users\axioo\.gradle\caches\8.9\transforms\5e7b657433d401d15de08cce597ef435\transformed\activity-ktx-1.9.0\res
+com.tokofarhan.pos.app-ui-graphics-release-18 C:\Users\axioo\.gradle\caches\8.9\transforms\60a02b70f14bc942659b4c116ca1dee3\transformed\ui-graphics-release\res
+com.tokofarhan.pos.app-animation-release-19 C:\Users\axioo\.gradle\caches\8.9\transforms\63ed66d3c92f0ef856825451389fca62\transformed\animation-release\res
+com.tokofarhan.pos.app-appcompat-resources-1.6.1-20 C:\Users\axioo\.gradle\caches\8.9\transforms\694b6d635472e892aee5cdd0dfa2bc91\transformed\appcompat-resources-1.6.1\res
+com.tokofarhan.pos.app-runtime-saveable-release-21 C:\Users\axioo\.gradle\caches\8.9\transforms\6bcd22a470b3f024c0bb5786f9e4ea08\transformed\runtime-saveable-release\res
+com.tokofarhan.pos.app-lifecycle-viewmodel-ktx-2.8.3-22 C:\Users\axioo\.gradle\caches\8.9\transforms\72594979648f6a6aa715b11025138199\transformed\lifecycle-viewmodel-ktx-2.8.3\res
+com.tokofarhan.pos.app-savedstate-ktx-1.2.1-23 C:\Users\axioo\.gradle\caches\8.9\transforms\72b7734929a1f7006f84f29ab36c0a81\transformed\savedstate-ktx-1.2.1\res
+com.tokofarhan.pos.app-activity-compose-1.9.0-24 C:\Users\axioo\.gradle\caches\8.9\transforms\7df35c6e0c04934724532a8cbd91e8a6\transformed\activity-compose-1.9.0\res
+com.tokofarhan.pos.app-room-ktx-2.6.1-25 C:\Users\axioo\.gradle\caches\8.9\transforms\8878350e96829177534ed8c9c0cb79b1\transformed\room-ktx-2.6.1\res
+com.tokofarhan.pos.app-lifecycle-viewmodel-savedstate-2.8.3-26 C:\Users\axioo\.gradle\caches\8.9\transforms\8b1cfd575aadca8a5330f9f7dd68c33a\transformed\lifecycle-viewmodel-savedstate-2.8.3\res
+com.tokofarhan.pos.app-ui-release-27 C:\Users\axioo\.gradle\caches\8.9\transforms\9491fa06de5b1ceeefb43b39dd808945\transformed\ui-release\res
+com.tokofarhan.pos.app-foundation-release-28 C:\Users\axioo\.gradle\caches\8.9\transforms\94f45518e89bc6a2aac7534c5aaec0f4\transformed\foundation-release\res
+com.tokofarhan.pos.app-runtime-release-29 C:\Users\axioo\.gradle\caches\8.9\transforms\990cf5e6dd064d685dba1f6c24a205b1\transformed\runtime-release\res
+com.tokofarhan.pos.app-activity-1.9.0-30 C:\Users\axioo\.gradle\caches\8.9\transforms\a34ca2e8fdade6be712c0d5b0fcb9935\transformed\activity-1.9.0\res
+com.tokofarhan.pos.app-core-runtime-2.2.0-31 C:\Users\axioo\.gradle\caches\8.9\transforms\a8c7317a5f4813294e70c8f9c6f03081\transformed\core-runtime-2.2.0\res
+com.tokofarhan.pos.app-sqlite-2.4.0-32 C:\Users\axioo\.gradle\caches\8.9\transforms\a95c8ce21117b13dd6cab1883b79d937\transformed\sqlite-2.4.0\res
+com.tokofarhan.pos.app-sqlite-framework-2.4.0-33 C:\Users\axioo\.gradle\caches\8.9\transforms\ae05bd02fbb2077bdddf11d76b9c553a\transformed\sqlite-framework-2.4.0\res
+com.tokofarhan.pos.app-core-1.13.1-34 C:\Users\axioo\.gradle\caches\8.9\transforms\b41cd76b74aa90d0d6a07b3d109a68e2\transformed\core-1.13.1\res
+com.tokofarhan.pos.app-ui-text-release-35 C:\Users\axioo\.gradle\caches\8.9\transforms\b5ea6e8af825a349c75f6b3b376acd64\transformed\ui-text-release\res
+com.tokofarhan.pos.app-coil-base-2.7.0-36 C:\Users\axioo\.gradle\caches\8.9\transforms\b77aae2e487ef0a23d420ed20b3985f0\transformed\coil-base-2.7.0\res
+com.tokofarhan.pos.app-material-ripple-release-37 C:\Users\axioo\.gradle\caches\8.9\transforms\b909b46309fa9fa2a90cb2406e52e410\transformed\material-ripple-release\res
+com.tokofarhan.pos.app-annotation-experimental-1.4.0-38 C:\Users\axioo\.gradle\caches\8.9\transforms\bb1c9e4197ebdc8353ed4859e1fd45e2\transformed\annotation-experimental-1.4.0\res
+com.tokofarhan.pos.app-foundation-layout-release-39 C:\Users\axioo\.gradle\caches\8.9\transforms\c73c74b3450d16a1157371ee64fe9af8\transformed\foundation-layout-release\res
+com.tokofarhan.pos.app-lifecycle-process-2.8.3-40 C:\Users\axioo\.gradle\caches\8.9\transforms\c779a65a890cecfc534720b7fcfc70d2\transformed\lifecycle-process-2.8.3\res
+com.tokofarhan.pos.app-lifecycle-viewmodel-compose-release-41 C:\Users\axioo\.gradle\caches\8.9\transforms\c9d3e012b156ecf6e6e2c1e5b02dc0be\transformed\lifecycle-viewmodel-compose-release\res
+com.tokofarhan.pos.app-ui-tooling-preview-release-42 C:\Users\axioo\.gradle\caches\8.9\transforms\cabfa15bf96743db2a4af5afeffe755d\transformed\ui-tooling-preview-release\res
+com.tokofarhan.pos.app-ui-util-release-43 C:\Users\axioo\.gradle\caches\8.9\transforms\ccbdb10b9e965bc4b4c1a665ec38dad6\transformed\ui-util-release\res
+com.tokofarhan.pos.app-material-icons-extended-release-44 C:\Users\axioo\.gradle\caches\8.9\transforms\ccf64500b3e69553b03845a9a1acbf48\transformed\material-icons-extended-release\res
+com.tokofarhan.pos.app-navigation-compose-2.7.7-45 C:\Users\axioo\.gradle\caches\8.9\transforms\d13469804b67aa5bb8199a17c74a9c88\transformed\navigation-compose-2.7.7\res
+com.tokofarhan.pos.app-ui-geometry-release-46 C:\Users\axioo\.gradle\caches\8.9\transforms\d332b65f088c8601a028c6f47304c9aa\transformed\ui-geometry-release\res
+com.tokofarhan.pos.app-navigation-runtime-ktx-2.7.7-47 C:\Users\axioo\.gradle\caches\8.9\transforms\e79c5d29815a3ae4b4f0d84acb33eaf2\transformed\navigation-runtime-ktx-2.7.7\res
+com.tokofarhan.pos.app-material3-release-48 C:\Users\axioo\.gradle\caches\8.9\transforms\f4e2857b3c9f117dbb9d93d72b92a000\transformed\material3-release\res
+com.tokofarhan.pos.app-navigation-common-2.7.7-49 C:\Users\axioo\.gradle\caches\8.9\transforms\f53093435394c1534f1b10d5704a9b7d\transformed\navigation-common-2.7.7\res
+com.tokofarhan.pos.app-lifecycle-runtime-ktx-release-50 C:\Users\axioo\.gradle\caches\8.9\transforms\f57b8aba7ff5c91294349af52f1faca4\transformed\lifecycle-runtime-ktx-release\res
+com.tokofarhan.pos.app-startup-runtime-1.1.1-51 C:\Users\axioo\.gradle\caches\8.9\transforms\f8d7b980099e40bf4fc9ff1c9e49663e\transformed\startup-runtime-1.1.1\res
+com.tokofarhan.pos.app-ui-text-google-fonts-1.6.8-52 C:\Users\axioo\.gradle\caches\8.9\transforms\fadc82d56401a49f4282b8da55c91b51\transformed\ui-text-google-fonts-1.6.8\res
+com.tokofarhan.pos.app-pngs-53 D:\Toko Farhan Project KWU\android\app\build\generated\res\pngs\debug
+com.tokofarhan.pos.app-resValues-54 D:\Toko Farhan Project KWU\android\app\build\generated\res\resValues\debug
+com.tokofarhan.pos.app-packageDebugResources-55 D:\Toko Farhan Project KWU\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.tokofarhan.pos.app-packageDebugResources-56 D:\Toko Farhan Project KWU\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.tokofarhan.pos.app-debug-57 D:\Toko Farhan Project KWU\android\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.tokofarhan.pos.app-debug-58 D:\Toko Farhan Project KWU\android\app\src\debug\res
+com.tokofarhan.pos.app-main-59 D:\Toko Farhan Project KWU\android\app\src\main\res

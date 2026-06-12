@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cart &amp; Quick Price Edit - Toko Farhan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#324539",
+                        "on-secondary-fixed": "#031d30",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#737873",
+                        "tertiary-fixed-dim": "#e3bdbe",
+                        "tertiary-container": "#c8a4a5",
+                        "on-surface-variant": "#434844",
+                        "inverse-on-surface": "#f2f0ee",
+                        "on-tertiary-fixed": "#2b1617",
+                        "surface-dim": "#dbdad7",
+                        "inverse-primary": "#b6ccbc",
+                        "primary": "#4f6356",
+                        "surface": "#fbf9f7",
+                        "secondary-fixed": "#cde5fe",
+                        "primary-container": "#9db2a3",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c8c2",
+                        "inverse-surface": "#30312f",
+                        "surface-container-high": "#e9e8e6",
+                        "surface-bright": "#fbf9f7",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f7",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#b1c9e1",
+                        "on-secondary-fixed-variant": "#32495d",
+                        "surface-container-highest": "#e4e2e0",
+                        "on-primary-fixed-variant": "#384b3f",
+                        "on-background": "#1b1c1b",
+                        "secondary-container": "#cae2fb",
+                        "surface-tint": "#4f6356",
+                        "on-surface": "#1b1c1b",
+                        "on-tertiary-container": "#543a3b",
+                        "error": "#ba1a1a",
+                        "secondary": "#4a6176",
+                        "primary-fixed": "#d2e8d8",
+                        "tertiary": "#745758",
+                        "primary-fixed-dim": "#b6ccbc",
+                        "on-tertiary-fixed-variant": "#5b4041",
+                        "surface-container-low": "#f5f3f1",
+                        "tertiary-fixed": "#ffdada",
+                        "surface-variant": "#e4e2e0",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "on-secondary-container": "#4e657a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#0d1f15"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "touch-target-min": "48px",
+                        "unit": "4px",
+                        "margin-mobile": "20px",
+                        "gutter-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "body-md": ["Nunito Sans"],
+                        "title-lg": ["Nunito Sans"],
+                        "label-lg": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: rgba(27, 28, 27, 0.4); /* Simulated dimming for modal */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* Bottom sheet layout */
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent background scroll */
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+
+        /* Hide scrollbar for clean UI but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-on-background/40">
+<!-- Screen Content: Suppressing TopAppBar and BottomNavBar as this is a focused, transactional view (Modal Bottom Sheet) -->
+<!-- Bottom Sheet Container -->
+<div class="w-full max-w-[480px] bg-surface rounded-t-[24px] shadow-[0_-8px_32px_rgba(45,55,72,0.15)] flex flex-col h-[751px] animate-slide-up relative">
+<!-- Drag Handle Indicator -->
+<div class="w-full flex justify-center pt-4 pb-2">
+<div class="w-12 h-1.5 bg-outline-variant rounded-full opacity-60"></div>
+</div>
+<!-- Header Area -->
+<div class="px-margin-mobile pb-4 flex items-center justify-between border-b border-surface-variant">
+<div class="flex items-center gap-3">
+<!-- Close Action (Implied departure from main flow) -->
+<button class="w-touch-target-min h-touch-target-min flex items-center justify-center rounded-full hover:bg-surface-container-high active:scale-95 transition-all text-on-surface">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="font-title-lg text-title-lg text-on-surface">Keranjang</h1>
+</div>
+<!-- Printer Status Indicator -->
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-full">
+<span class="material-symbols-outlined text-[18px] text-primary">print</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Siap</span>
+</div>
+</div>
+<!-- Cart Items List (Scrollable Area) -->
+<div class="flex-1 overflow-y-auto no-scrollbar px-margin-mobile py-4 space-y-4">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-[0_4px_12px_rgba(45,55,72,0.06)] flex flex-col gap-3 border border-outline-variant/30">
+<div class="flex justify-between items-start">
+<div class="flex-1 pr-4">
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Beras Maknyuss 5kg</h3>
+<!-- Editable Price Area -->
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-lg text-body-lg text-on-surface-variant line-through opacity-70">Rp 65.000</span>
+<div class="flex items-center gap-1.5 text-primary bg-primary-fixed rounded-lg px-2 py-1">
+<span class="font-title-lg text-title-lg font-bold">Rp 62.000</span>
+<button class="p-1 rounded-full hover:bg-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px] fill">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-3 border-t border-surface-variant/50">
+<span class="font-body-md text-body-md text-on-surface-variant">Subtotal: Rp 124.000</span>
+<!-- Stepper Control -->
+<div class="flex items-center bg-surface-container rounded-full border border-outline-variant/50">
+<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-l-full active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-10 text-center font-title-lg text-title-lg text-on-surface">2</span>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container rounded-r-full active:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-[0_4px_12px_rgba(45,55,72,0.06)] flex flex-col gap-3 border border-outline-variant/30">
+<div class="flex justify-between items-start">
+<div class="flex-1 pr-4">
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Minyak Goreng Bimoli 2L</h3>
+<!-- Editable Price Area -->
+<div class="flex items-center gap-2 mt-1">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="font-title-lg text-title-lg">Rp 34.500</span>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-3 border-t border-surface-variant/50">
+<span class="font-body-md text-body-md text-on-surface-variant">Subtotal: Rp 34.500</span>
+<!-- Stepper Control -->
+<div class="flex items-center bg-surface-container rounded-full border border-outline-variant/50">
+<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-l-full active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-10 text-center font-title-lg text-title-lg text-on-surface">1</span>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container rounded-r-full active:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-[0_4px_12px_rgba(45,55,72,0.06)] flex flex-col gap-3 border border-outline-variant/30">
+<div class="flex justify-between items-start">
+<div class="flex-1 pr-4">
+<h3 class="font-title-lg text-title-lg text-on-surface mb-1">Gula Pasir Gulaku 1kg</h3>
+<!-- Editable Price Area -->
+<div class="flex items-center gap-2 mt-1">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="font-title-lg text-title-lg">Rp 16.000</span>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-3 border-t border-surface-variant/50">
+<span class="font-body-md text-body-md text-on-surface-variant">Subtotal: Rp 48.000</span>
+<!-- Stepper Control -->
+<div class="flex items-center bg-surface-container rounded-full border border-outline-variant/50">
+<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-l-full active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-10 text-center font-title-lg text-title-lg text-on-surface">3</span>
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container rounded-r-full active:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Spacing at bottom to ensure last item isn't hidden by sticky footer -->
+<div class="h-4"></div>
+</div>
+<!-- Sticky Footer Area: Total & Checkout Action -->
+<div class="px-margin-mobile py-4 bg-surface shadow-[0_-4px_16px_rgba(0,0,0,0.05)] border-t border-surface-variant z-10">
+<div class="flex justify-between items-end mb-4">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface-variant">Total Pesanan (6 item)</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1">Rp 206.500</span>
+</div>
+<!-- Small discount indicator -->
+<div class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded text-xs font-bold border border-tertiary-fixed-dim">
+                    Diskon Rp 6.000
+                </div>
+</div>
+<button class="w-full h-14 bg-primary text-on-primary rounded-xl font-title-lg text-title-lg flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(79,99,86,0.3)] hover:bg-primary/90 active:scale-[0.98] transition-all">
+                Pilih Pembayaran
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

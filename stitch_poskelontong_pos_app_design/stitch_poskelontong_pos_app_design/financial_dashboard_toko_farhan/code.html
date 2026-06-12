@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Financial Dashboard - Warung Kita</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#324539",
+                    "on-secondary-fixed": "#031d30",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#737873",
+                    "tertiary-fixed-dim": "#e3bdbe",
+                    "tertiary-container": "#c8a4a5",
+                    "on-surface-variant": "#434844",
+                    "inverse-on-surface": "#f2f0ee",
+                    "on-tertiary-fixed": "#2b1617",
+                    "surface-dim": "#dbdad7",
+                    "inverse-primary": "#b6ccbc",
+                    "primary": "#4f6356",
+                    "surface": "#fbf9f7",
+                    "secondary-fixed": "#cde5fe",
+                    "primary-container": "#9db2a3",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c3c8c2",
+                    "inverse-surface": "#30312f",
+                    "surface-container-high": "#e9e8e6",
+                    "surface-bright": "#fbf9f7",
+                    "on-tertiary": "#ffffff",
+                    "background": "#fbf9f7",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b1c9e1",
+                    "on-secondary-fixed-variant": "#32495d",
+                    "surface-container-highest": "#e4e2e0",
+                    "on-primary-fixed-variant": "#384b3f",
+                    "on-background": "#1b1c1b",
+                    "secondary-container": "#cae2fb",
+                    "surface-tint": "#4f6356",
+                    "on-surface": "#1b1c1b",
+                    "on-tertiary-container": "#543a3b",
+                    "error": "#ba1a1a",
+                    "secondary": "#4a6176",
+                    "primary-fixed": "#d2e8d8",
+                    "tertiary": "#745758",
+                    "primary-fixed-dim": "#b6ccbc",
+                    "on-tertiary-fixed-variant": "#5b4041",
+                    "surface-container-low": "#f5f3f1",
+                    "tertiary-fixed": "#ffdada",
+                    "surface-variant": "#e4e2e0",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#efeeeb",
+                    "on-secondary-container": "#4e657a",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#0d1f15"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "touch-target-min": "48px",
+                    "unit": "4px",
+                    "margin-mobile": "20px",
+                    "gutter-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Nunito Sans"],
+                    "headline-md": ["Nunito Sans"],
+                    "body-md": ["Nunito Sans"],
+                    "title-lg": ["Nunito Sans"],
+                    "label-lg": ["Nunito Sans"],
+                    "body-lg": ["Nunito Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "700"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "title-lg": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile h-touch-target-min bg-surface text-primary shadow-sm">
+<button class="flex items-center justify-center w-touch-target-min h-touch-target-min hover:bg-surface-container-high transition-colors rounded-full active:scale-95 transition-transform duration-200 -ml-3">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-on-primary-container flex-1 ml-2">Toko Farhan</h1>
+<button class="flex items-center justify-center w-touch-target-min h-touch-target-min hover:bg-surface-container-high transition-colors rounded-full active:scale-95 transition-transform duration-200 -mr-3">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="pt-24 pb-32 px-margin-mobile max-w-2xl mx-auto space-y-6">
+<!-- Top Section: Metric Cards (Bento Layout) -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Primary Card: Penjualan Hari Ini (Full width on mobile, spans 2 cols) -->
+<div class="col-span-2 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(45,55,72,0.08)] p-5 flex flex-col relative overflow-hidden group">
+<div class="flex justify-between items-start mb-4">
+<h2 class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider text-xs">Penjualan Hari Ini</h2>
+<span class="material-symbols-outlined text-primary bg-primary-container/30 p-1.5 rounded-lg">trending_up</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">Rp 2.450.000</span>
+<span class="font-body-md text-body-md text-primary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+                        +12.5% vs kemarin
+                    </span>
+</div>
+<!-- Decorative background shape -->
+<div class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary-fixed-dim/20 rounded-full blur-xl group-hover:scale-110 transition-transform duration-500"></div>
+</div>
+<!-- Secondary Card: Laba Bersih -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(45,55,72,0.08)] p-4 flex flex-col justify-between hover:shadow-md transition-shadow">
+<h3 class="font-label-lg text-label-lg text-on-surface-variant mb-2">Laba Bersih</h3>
+<span class="font-title-lg text-title-lg text-on-surface">Rp 680.000</span>
+</div>
+<!-- Warning Card: Stok -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(45,55,72,0.08)] p-4 flex flex-col justify-between border-l-4 border-error hover:shadow-md transition-shadow">
+<h3 class="font-label-lg text-label-lg text-on-surface-variant mb-2">Stok Hampir Habis</h3>
+<span class="font-title-lg text-title-lg text-error flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[20px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+                    8 Item
+                </span>
+</div>
+</section>
+<!-- Middle Section: 7-Day Trend Chart -->
+<section class="bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(45,55,72,0.08)] p-5">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Grafik Penjualan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-0.5">7 Hari Terakhir</p>
+</div>
+<div class="bg-surface-container px-3 py-1.5 rounded-lg flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-lg text-label-lg text-on-surface-variant text-xs">Pendapatan</span>
+</div>
+</div>
+<!-- CSS Bar Chart (Simulated) -->
+<div class="relative h-48 w-full border-b border-outline-variant/30 flex items-end justify-between gap-2 px-1 pt-4">
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none">
+<div class="border-t border-outline-variant/20 w-full"></div>
+<div class="border-t border-outline-variant/20 w-full"></div>
+<div class="border-t border-outline-variant/20 w-full"></div>
+<div class="border-t border-outline-variant/20 w-full"></div>
+</div>
+<!-- Bars (Using secondary-fixed-dim to match Dusty Blue vibe) -->
+<div class="relative w-full h-[40%] bg-secondary-fixed-dim rounded-t-md hover:bg-secondary transition-colors cursor-pointer group">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap transition-opacity">1.2M</div>
+</div>
+<div class="relative w-full h-[65%] bg-secondary-fixed-dim rounded-t-md hover:bg-secondary transition-colors cursor-pointer group">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap transition-opacity">1.8M</div>
+</div>
+<div class="relative w-full h-[30%] bg-secondary-fixed-dim rounded-t-md hover:bg-secondary transition-colors cursor-pointer group">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap transition-opacity">0.9M</div>
+</div>
+<div class="relative w-full h-[85%] bg-secondary-fixed-dim rounded-t-md hover:bg-secondary transition-colors cursor-pointer group">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap transition-opacity">2.1M</div>
+</div>
+<div class="relative w-full h-[55%] bg-secondary-fixed-dim rounded-t-md hover:bg-secondary transition-colors cursor-pointer group">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap transition-opacity">1.5M</div>
+</div>
+<div class="relative w-full h-[70%] bg-secondary-fixed-dim rounded-t-md hover:bg-secondary transition-colors cursor-pointer group">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap transition-opacity">1.9M</div>
+</div>
+<!-- Today's Bar Highlighted -->
+<div class="relative w-full h-[95%] bg-primary rounded-t-md shadow-sm cursor-pointer group">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface font-label-lg text-[10px] px-2 py-1 rounded whitespace-nowrap z-10 flex items-center gap-1 shadow-md">
+<span class="w-1.5 h-1.5 bg-primary-fixed rounded-full"></span>
+                         Hari ini
+                     </div>
+</div>
+</div>
+<!-- X-Axis Labels -->
+<div class="flex justify-between mt-3 px-1 font-body-md text-body-md text-on-surface-variant text-xs font-semibold">
+<span class="w-full text-center">Sen</span>
+<span class="w-full text-center">Sel</span>
+<span class="w-full text-center">Rab</span>
+<span class="w-full text-center">Kam</span>
+<span class="w-full text-center">Jum</span>
+<span class="w-full text-center">Sab</span>
+<span class="w-full text-center text-primary">Min</span>
+</div>
+</section>
+<!-- Bottom Section: Export Action -->
+<section class="pt-2">
+<button class="w-full h-touch-target-min bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-semibold rounded-xl flex items-center justify-center gap-2 hover:bg-secondary-fixed transition-colors shadow-sm active:scale-[0.98] duration-200 border border-secondary-fixed-dim/50">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">download</span>
+                Export Laporan ke Excel (.xlsx)
+            </button>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<!-- Laporan is the active state based on page context -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 h-20 bg-surface rounded-t-xl border-t border-outline-variant shadow-[0_-8px_24px_rgba(45,55,72,0.1)] md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-lg p-2 min-w-[64px]" href="#">
+<span class="material-symbols-outlined mb-1">point_of_sale</span>
+<span class="font-label-lg text-[11px] leading-tight font-medium">Transaksi</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-lg p-2 min-w-[64px]" href="#">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-label-lg text-[11px] leading-tight font-medium">Riwayat</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-transform duration-150 hover:bg-surface-container-low rounded-lg p-2 min-w-[64px]" href="#">
+<span class="material-symbols-outlined mb-1">inventory_2</span>
+<span class="font-label-lg text-[11px] leading-tight font-medium">Stok</span>
+</a>
+<!-- Active Tab: Laporan -->
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-6 py-1.5 active:scale-90 transition-transform duration-150 min-w-[64px] shadow-sm" href="#">
+<span class="material-symbols-outlined mb-0.5" style="font-variation-settings: 'FILL' 1;">assessment</span>
+<span class="font-label-lg text-[11px] leading-tight font-bold">Laporan</span>
+</a>
+</nav>
+</body></html>

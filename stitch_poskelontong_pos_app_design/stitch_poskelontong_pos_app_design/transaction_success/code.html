@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Transaksi Berhasil</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#324539",
+                        "on-secondary-fixed": "#031d30",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#737873",
+                        "tertiary-fixed-dim": "#e3bdbe",
+                        "tertiary-container": "#c8a4a5",
+                        "on-surface-variant": "#434844",
+                        "inverse-on-surface": "#f2f0ee",
+                        "on-tertiary-fixed": "#2b1617",
+                        "surface-dim": "#dbdad7",
+                        "inverse-primary": "#b6ccbc",
+                        "primary": "#4f6356",
+                        "surface": "#fbf9f7",
+                        "secondary-fixed": "#cde5fe",
+                        "primary-container": "#9db2a3",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c3c8c2",
+                        "inverse-surface": "#30312f",
+                        "surface-container-high": "#e9e8e6",
+                        "surface-bright": "#fbf9f7",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fbf9f7",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#b1c9e1",
+                        "on-secondary-fixed-variant": "#32495d",
+                        "surface-container-highest": "#e4e2e0",
+                        "on-primary-fixed-variant": "#384b3f",
+                        "on-background": "#1b1c1b",
+                        "secondary-container": "#cae2fb",
+                        "surface-tint": "#4f6356",
+                        "on-surface": "#1b1c1b",
+                        "on-tertiary-container": "#543a3b",
+                        "error": "#ba1a1a",
+                        "secondary": "#4a6176",
+                        "primary-fixed": "#d2e8d8",
+                        "tertiary": "#745758",
+                        "primary-fixed-dim": "#b6ccbc",
+                        "on-tertiary-fixed-variant": "#5b4041",
+                        "surface-container-low": "#f5f3f1",
+                        "tertiary-fixed": "#ffdada",
+                        "surface-variant": "#e4e2e0",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "on-secondary-container": "#4e657a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#0d1f15"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "touch-target-min": "48px",
+                        "unit": "4px",
+                        "margin-mobile": "20px",
+                        "gutter-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Nunito Sans"],
+                        "headline-md": ["Nunito Sans"],
+                        "body-md": ["Nunito Sans"],
+                        "title-lg": ["Nunito Sans"],
+                        "label-lg": ["Nunito Sans"],
+                        "body-lg": ["Nunito Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.5px", "fontWeight": "600" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .receipt-edge {
+            background-image: radial-gradient(circle at 10px 0, transparent 10px, white 11px);
+            background-size: 20px 10px;
+            background-repeat: repeat-x;
+            height: 10px;
+            width: 100%;
+        }
+        .receipt-edge.bottom {
+            background-image: radial-gradient(circle at 10px 10px, transparent 10px, white 11px);
+            background-position: bottom;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background min-h-screen flex flex-col items-center justify-center p-margin-mobile font-body-lg text-on-background">
+<!-- Main Content Container -->
+<main class="w-full max-w-md flex flex-col items-center flex-grow py-8">
+<!-- Success Animation/Icon Area -->
+<div class="flex flex-col items-center mb-8">
+<div class="w-24 h-24 bg-primary-fixed rounded-full flex items-center justify-center mb-6 shadow-[0_4px_12px_rgba(45,55,72,0.08)]">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-background text-center">Transaksi Berhasil!</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Terima kasih atas pembelian Anda.</p>
+</div>
+<!-- Digital Receipt Card -->
+<div class="w-full bg-transparent shadow-[0_8px_24px_rgba(45,55,72,0.12)] rounded-lg relative overflow-hidden mb-8">
+<div class="bg-surface-container-lowest px-6 py-8 relative">
+<!-- Decorative dashes -->
+<div class="border-b-2 border-dashed border-outline-variant mb-6 pb-6">
+<div class="flex justify-between items-center mb-4">
+<span class="font-body-md text-body-md text-on-surface-variant">Waktu Transaksi</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">24 Okt 2023, 14:30</span>
+</div>
+<div class="flex justify-between items-center mb-4">
+<span class="font-body-md text-body-md text-on-surface-variant">No. Struk</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">#INV-00123</span>
+</div>
+</div>
+<div class="space-y-4 mb-6">
+<div class="flex justify-between items-center">
+<span class="font-body-lg text-body-lg text-on-surface">Total Belanja</span>
+<span class="font-title-lg text-title-lg text-on-surface">Rp 125.000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-lg text-body-lg text-on-surface-variant">Tunai</span>
+<span class="font-body-lg text-body-lg text-on-surface-variant">Rp 150.000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-lg text-body-lg text-on-surface-variant">Kembalian</span>
+<span class="font-body-lg text-body-lg text-on-surface-variant">Rp 25.000</span>
+</div>
+</div>
+</div>
+<!-- Receipt Bottom Edge Effect -->
+<div class="receipt-edge bottom absolute bottom-0 left-0"></div>
+</div>
+<!-- Secondary Actions -->
+<div class="w-full flex gap-4 mb-8">
+<button class="flex-1 flex items-center justify-center gap-2 h-touch-target-min border border-outline rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">print</span>
+<span class="font-label-lg text-label-lg">Cetak Struk</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 h-touch-target-min border border-outline rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">share</span>
+<span class="font-label-lg text-label-lg">Kirim WA</span>
+</button>
+</div>
+<!-- Spacer to push primary button down -->
+<div class="flex-grow"></div>
+<!-- Massive Primary Button -->
+<button class="w-full h-14 bg-primary text-on-primary rounded-xl flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(45,55,72,0.15)] hover:bg-surface-tint active:scale-95 transition-all duration-200 mt-auto">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-title-lg text-title-lg">Mulai Transaksi Baru</span>
+</button>
+</main>
+</body></html>
